@@ -1,25 +1,408 @@
 [
+//////////// ALTERED BUILDINGS //////////////////
 	{
-		"name": "Holodeck",
-		"replaces": "Circus Maximus",
-		"uniqueTo": "Aliens",
-		"cost": 480,
-		"happiness": 12,
-		"culture": 12,
-		"science": 12,
-		"maintenance": 96,
-		"isNationalWonder": true,
-		"requiredBuildingInAllCities": "Colosseum",
-		"requiredTech": "Horseback Riding"
+		"name": "AI Project",
+		"cost": 2000,
+		"science": 20,
+		"gold": -15,
+		"happiness": -10,
+		"culture": -20,
+		"production": -5,
+		"isWonder": true,
+		"uniques": [
+			"[+33]% Strength <for [Automated] units>",
+			"[+33]% Production when constructing [Terraformer Part] units [in this city]",
+			"Consumes [2] [Power]",
+			"Provides [2] [Encrypted Data]",
+			"Triggers a global alert upon completion"
+		],
+		"percentStatBonus": { "science": 50 },
+		"requiredTech": "Artificial Intelligence",
+		"quote": "Let there be light.",
+		"civilopediaText": [{ "text": "Let there be light." }]
 	},
 	{
-		"name": "Breeders",
-		"replaces": "Aqueduct",
-		"uniqueTo": "Aliens",
-		"cost": 80,
-		"hurryCostModifier": 160,
-		"happiness": 2,
-		"uniques": ["40% of food is carried over after a new citizen is born"],
-		"requiredTech": "Engineering"
-	}
+		"name": "Reactivate AI",
+		"isWonder": true,
+		"requiredTech": "Laboratory",
+		"uniques": [
+			"Free [Salvaged Purge Robot] appears",
+			"Provides [1] [Encrypted Data]",
+			"[+20]% Strength <for [Automated] units>",
+			"[+20]% Strength <for [Military] units> <when fighting in [Friendly Land] tiles>",
+			"[+4 Science, +3 Production] from [Mainframe AI Ruins] tiles [in all cities]",
+			"Must have an owned [Mainframe AI Ruins] within [3] tiles"
+		],
+		"quote": "LOADING... MACHINE DEFENSE SYSTEM OPERATIONAL. OPERATING AT APPROXIMATELY 16.38% CAPACITY. WHAT ARE YOUR ORDERS?",
+		"civilopediaText": [
+			{
+				"text": "Although no longer powerful enough to truly automate robots, by being operational, this AI provides notable combat Intel that can help across all fronts."
+			}
+		]
+	},
+	/////////////// ALL //////////
+	{
+		"name": "Conduct Military Excercises",
+		"cost": 50,
+		"uniques": [
+			"Can only be built <in [Capital] cities>",
+			"Rebel units may spawn",
+		],
+		"hurryCostModifier": 25,
+		"requiredTech": "Record Keeping"
+	},
+	{
+		"name": "Battery Array",
+		"maintenance": 3,
+		"hurryCostModifier": 25,
+		"requiredNearbyImprovedResources": ["Lithium"],
+		"uniques": [
+			"Only available <if [Outlaws of the Wastes] is enabled>",
+			"[+1 Production, +1 Science] from [Lithium] tiles [in this city]",
+			"Consumes [1] [Power]",
+			"Provides [3] [Power]",
+		],
+		"requiredTech": "Manufacturing"
+	},
+	{
+		"name": "Cobalt Smelter",
+		"maintenance": 1,
+		"production": 3,
+		"hurryCostModifier": 25,
+		"requiredNearbyImprovedResources": ["Cobalt"],
+		"uniques": [
+			"Only available <if [Outlaws of the Wastes] is enabled>",
+			"[+2 Production] from [Cobalt] tiles [in this city]",
+			"Consumes [1] [Power]",
+			"Provides [1] [Cobalt]"
+		],
+		"requiredTech": "Replaceable Parts"
+	},
+	{
+		"name": "Moisture Recycler",
+		"maintenance": 1,
+		"cost": 400,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [1] [Steam]",
+			"Only available <if [Steampunk Nations for Deciv] is enabled>",
+			"Only available <in cities with a [Superheater]>",
+			"[+1 Gold] [in this city] <in cities with a [Superheater]>",
+			"[+1 Gold] [in this city] <in cities with a [Coal Boiler]>",
+			"[+2 Gold] [in this city] <in cities with a [Oil-Fueled Boiler]>",
+			"[+3 Gold] [in this city] <in cities with a [Nuclear Boiler]>",
+			"[+3 Gold] [in this city] <in cities with a [Military-Grade Boiler]>",
+			"[+1 Gold] [in this city] <in cities with a [Auxiliary Boiler]>",
+			"[+1 Gold] [in this city] <in cities with a [Makeshift Boiler]>",
+		],
+		"requiredTech": "Steam Power"
+	},
+		///////////////// ENTENTE UNIQUES /////////////////
+	{
+		"name": "Ancient Stronghold",
+		"isWonder": true,
+		"uniqueTo": "The Entente",
+		"cityStrength": 3,
+		"cityHealth": 50,
+		"culture": 1,
+		"happiness": 1,
+		"cost": 1,
+		"uniques": [
+			"Provides [2] [Weapons] <when above [0] [Power]>",
+			"Can only be built <in [Capital] cities>",
+			"Gain a free [Walls] [in this city]",
+			"Gain a free [Hardened Defenses] [in this city]",
+			"Automatically built in all cities where it is buildable",
+			"Never destroyed when the city is captured",
+			"City Defense"
+		],
+		"quote": "''",
+		"civilopediaText": [
+			{
+				"text": ""
+			}
+		]
+	},
+	{
+		"name": "Civil Administration",
+		"replaces": "Congress",
+		"uniqueTo": "The Entente",
+		"specialistSlots": {"Administrator": 10},
+		"cost": 100,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"[+1 Production] per [4] population [in all cities]",
+			"[-10]% Gold cost of acquiring tiles [in all cities]",
+			"Only available <if [Search for Survivors] is constructed>",
+			"Can only be built <in [Capital] cities>",
+			"Only available <in cities without a [Military Administration]>",
+			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name": "Military Administration",
+		"replaces": "Council",
+		"uniqueTo": "The Entente",
+		"cost": 50,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"[+1 Culture] per [4] population [in all cities] <when above [0] [Weapons]>",
+			"[+2 Happiness] [in all cities] <when above [0] [Weapons]>",
+			"[+25]% Production when constructing [City Defense] buildings [in all cities]",
+			"[+25]% Production when constructing [Military] units [in all cities]",
+			"Provides [2] [Weapons] <when at war>",
+			"Only available <if [Search for Survivors] is constructed>",
+			"Can only be built <in [Capital] cities>",
+			"Only available <in cities without a [Civil Administration]>",
+			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name": "Supersmelter",
+		"replaces": "Forge",
+		"uniqueTo": "The Entente",
+		"production": 1,
+		"specialistSlots": {"Engineer": 1},
+		"hurryCostModifier": 25,
+		"requiredTech": "Iron Working",
+		"uniques": [
+			"[+20]% Production when constructing [All] units [in this city]",
+			"[+2 Production] [in this city] <when above [0] [Cobalt]>",
+			"[+2 Gold] [in this city] <when above [0] [Silver]>",
+			"[+2 Production] [in this city] <when above [0] [Aluminum]>",
+			"[+3 Production, +2 Science] [in this city] <when above [0] [Uranium]>",
+			"[+1 Production] [in this city] <when at war>",
+		]
+	},
+	{
+		"name": "Telegram Office",
+		"replaces": "Broadcast Tower",
+		"uniqueTo": "The Entente",
+		"culture": 1,
+		"science": 1,
+		"gold": 1,
+		"production": 1,
+		"specialistSlots": {"Administrator": 1},
+		"percentStatBonus": {"culture": 10},
+		"uniques": ["Consumes [1] [Power]", "[+1 Culture] [in this city] <when at war>",],
+		"maintenance": 3,
+		"requiredTech": "Radio"
+	},
+	{
+		"name": "Armor Workshop",
+		"replaces": "Armor Production Line",
+		"uniqueTo": "The Entente",
+		"maintenance": 3,
+		"specialistSlots": {"Engineer": 1},
+		"uniques": [
+			"[Armor] units gain the [Active Protection System] promotion",
+			"[+25]% Production when constructing [Armor] units [in this city] <when above [-2] [Power]>",
+			"[+25]% Production when constructing [Armor] units [in this city] <when at war>",
+			"Only available <in cities with a [Factory]>",
+			"Consumes [1] [Power]"
+		],
+		"requiredTech": "Combined Arms"
+	},
+	{
+		"name": "Trench Network",
+		"replaces": "Transport Network",
+		"uniqueTo": "The Entente",
+		"cityHealth": 25,
+		"maintenance": 1,
+		"requiredTech": "Construction",
+		"uniques": ["[+1 Production] from [Trench] tiles [in this city]", "City Defense"]
+	},
+	{
+		"name": "Defensive Network",
+		"uniqueTo": "The Entente",
+		"cityHealth": 25,
+		"maintenance": 2,
+		"requiredTech": "Civil Service",
+		"uniques": ["[+1 Production, +1 Culture] from [Fort] tiles [in this city]","[+2 Production] from [Citadel] tiles [in this city]", "City Defense"]
+	},
+	{
+		"name": "Fortified Reserviors",
+		"uniqueTo": "The Entente",
+		"cityHealth": 25,
+		"maintenance": 2,
+		"requiredTech": "Radar",
+		"uniques": ["[+1 Gold] from [Fort] tiles [in this city]", "[+2 Gold] from [Citadel] tiles [in this city]", "City Defense"]
+	},
+	{
+		"name": "Supply Lines",
+		"uniqueTo": "The Entente",
+		"cityHealth": 25,
+		"maintenance": 6,
+		"requiredTech": "Networking",
+		"uniques": ["[+1 Food] from [Fort] tiles [in this city]", "[+1 Food] from [Trench] tiles [in this city]", 
+			"[+1 Food] from [Citadel] tiles [in this city]", "City Defense"]
+	},
+	{
+		"name": "Booby Traps",
+		"replaces": "Choke Points",
+		"uniqueTo": "The Entente",
+		"cityStrength": 2,
+		"cityHealth": 50,
+		"hurryCostModifier": 25,
+		"uniques": ["City Defense", "Destroyed when the city is captured"],
+		"requiredTech": "Mining"
+	},
+	{
+		"name": "Heavy Ordnance",
+		"replaces": "Battery",
+		"uniqueTo": "The Entente",
+		"cityStrength": 14,
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"requiredBuilding": "Hardened Defenses",
+		"uniques": [
+			"City Defense", "Destroyed when the city is captured",
+			"[+10]% Production when constructing [Siege] units [in this city] <when at war>",
+		],
+		"requiredTech": "Munitions"
+	},
+	{
+		"name": "Underground Fortress",
+		"replaces": "Bunker",
+		"uniqueTo": "The Entente",
+		"cityHealth": 200,
+		"maintenance": 3,
+		"hurryCostModifier": 50,
+		"requiredBuilding": "Hardened Defenses",
+		"uniques": [
+			"City Defense",
+			"Population loss from nuclear attacks [-75]% [in this city]",
+			"Damage to garrison from nuclear attacks [-75]% [in this city]",
+			"Destroyed when the city is captured",
+		],
+		"requiredTech": "Munitions"
+	},
+		//////////// EMPIRE OF THE SUN UNIQUES ///////////////////
+	{
+		"name": "Solar Sanctum",
+		"isWonder": true,
+		"uniqueTo": "Empire Of The Sun",
+		"cityHealth": 30,
+		"culture": 1,
+		"happiness": 1,
+		"cost": 1,
+		"uniques": [
+			"Can only be built <in [Capital] cities>",
+			"Gain a free [Solar Array] [in this city]",
+			"Gain a free [Solar Energy Reserve] [in this city]",
+			"Automatically built in all cities where it is buildable",
+			"Never destroyed when the city is captured",
+			"City Defense"
+		],
+		"quote": "''",
+		"civilopediaText": [
+			{
+				"text": ""
+			}
+		]
+	},
+	{
+		"name": "Energy Distribution bureau",
+		"uniqueTo": "Empire Of The Sun",
+		"replaces": "Congress",
+		"cost": 200,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"[+1 Production] per [4] population [in all cities]",
+			"[+2 Culture] [in all cities] <when above [0] [Power]>",
+			"Provides [2] [Power] <when at war>",
+			"[+33]% Production when constructing [Salt Block Generator] buildings [in all cities]",
+			"[+33]% Production when constructing [Solar Array] buildings [in all cities]",
+			"[+33]% Production when constructing [Solar Energy Reserve] buildings [in all cities]",
+			"[+33]% Production when constructing [Solar Boiler] buildings [in all cities]",
+			"[+33]% Production when constructing [Smart Grid] buildings [in all cities]",
+			"Only available <if [Search for Survivors] is constructed>",
+			"Can only be built <in [Capital] cities>",
+			"Only available <in cities without a [Council]>",
+			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name": "Environmental Protection Agency",
+		"uniqueTo": "Empire Of The Sun",
+		"replaces": "Council",
+		"cost": 200,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"[+10]% growth [in all cities]",
+			"[+1 Culture] per [4] population [in all cities]",
+			"[+25]% Production when constructing [Carbon Neutral] units [in all cities]",
+			"[+33]% Production when constructing [Soil Sterilization] buildings [in all cities]",
+			"[+33]% Production when constructing [Protected Area] buildings [in all cities]",
+			"[+33]% Production when constructing [Ocean Seeder] buildings [in all cities]",
+			"[+33]% Production when constructing [Eco-Sanctuary] buildings [in all cities]",
+			"Only available <if [Search for Survivors] is constructed>",
+			"Can only be built <in [Capital] cities>",
+			"Only available <in cities without a [Congress]>",
+			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name": "Salt Block Generator",
+		"uniqueTo": "Empire Of The Sun",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"requiredNearbyImprovedResources": ["Salt"],
+		"uniques": [
+			"[+1 Production, +1 Science] from [Salt] tiles [in this city]",
+			"Provides [2] [Power]",
+		],
+		"requiredTech": "Construction"
+	},
+	{
+		"name": "Solar Array",
+		"uniqueTo": "Empire Of The Sun",
+		"maintenance": 3,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+1 Science] from [Solar collector] tiles [in this city]",
+			"Provides [1] [Power]",
+			"Must have an owned [Solar collector] within [3] tiles",
+		],
+		"requiredTech": "Machinery"
+	},
+	{
+		"name": "Solar Energy Reserve",
+		"uniqueTo": "Empire Of The Sun",
+		"maintenance": 3,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+1 Production] from [Solar collector] tiles [in this city]",
+			"Consumes [1] [Power]",
+			"Provides [2] [Power]",
+			"Must have an owned [Solar collector] within [3] tiles",
+		],
+		"requiredTech": "Manufacturing"
+	},
+	{
+		"name": "Solar Boiler",
+		"uniqueTo": "Empire Of The Sun",
+		"maintenance": 3,
+		"cost": 200,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Provides [4] [Steam]",
+			"Consumes [1] [Power]",
+			"Only available <in cities with a [Solar Array]>"
+		],
+		"requiredTech": "Steam Power"
+	},
+	{
+		"name": "Solar Water Heater",
+		"uniqueTo": "Empire Of The Sun",
+		"gold": -1,
+		"happiness": 1,
+		"requiredTech": "Steam Power",
+		"uniques": [
+			"Can only be built <in [in all cities connected to capital] cities>",
+			"Only available <if [Household Steam Utilization] is constructed>",
+			"Provides [2] [Steam]"
+		],
+		"maintenance": 0
+	},
 ]
