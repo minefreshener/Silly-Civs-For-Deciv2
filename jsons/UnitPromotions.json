@@ -1,0 +1,60 @@
+[
+  \\\\\\\\\\ ALTERED PROMOTIONS //////////////  
+  {
+		"name": "Forage",
+		"uniques": [
+			"Heals [25] damage if it kills a unit",
+			"[+25]% XP gained from combat",
+			"Earn [33]% of killed [Military] unit's [Strength] as [Science]",
+			"[+5] HP when healing <in [Forest] tiles>",
+			"[+5] HP when healing <in [Jungle] tiles>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter"],
+		"column": 1,
+        "row": 2
+	},
+	{
+		"name": "Drone Recon",
+		"uniques": [
+			"Can see over obstacles",
+			"[+1] Sight <when [Embarked]>",
+			"[+25]% XP gained from combat",
+			"Only available <if [Ground Control Center] is constructed>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Armor"],
+		"column": 0,
+		"row": 2
+	},
+  /////////////////// NEW PROMOTIONS /////////////
+  {
+		"name": "Trench Warfare",
+		"uniques": [
+			"Can build [Trench] improvements on tiles",
+			"[+5] HP when healing <in [Trench] tiles>",
+			"[+10] HP when healing <in [Fort] tiles>",
+			"[+10]% Strength <when fighting in [Trench] tiles>",
+		],
+	},
+	{
+		"name": "Solar Powered",
+		"uniques": [
+			"[+10] HP when healing <in [Solar collector] tiles>",
+			"[+25]% Strength <when fighting in [Solar collector] tiles>",
+			"[+1] Movement <in [Solar collector] tiles>",
+			"[+1] Sight <in [Solar collector] tiles>",
+			"[+10] HP when healing <in [Powership] tiles>",
+			"[+25]% Strength <when fighting in [Powership] tiles>",
+			"[+1] Movement <in [Powership] tiles>",
+			"[+1] Sight <in [Powership] tiles>"
+		]
+	},
+	{
+		"name": "Sand Sailing",
+		"uniques": [
+			"[+5] HP when healing <in [Desert] tiles>",
+			"[+1] Movement <in [Desert] tiles>",
+		]
+	},
+]
