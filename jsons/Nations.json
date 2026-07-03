@@ -6,7 +6,7 @@
 		"startBias": ["Hill"],
 		"preferredVictoryType": "Diplomatic",
 		"personality": "Luminius",
-		"favoredReligion": "Solar Judgement",
+		"favoredReligion": "Solar Wisdom",
 
 		// "startIntroPart1": "",
 		// "startIntroPart2": "",
@@ -45,7 +45,7 @@
 		"startBias": ["Hill"],
 		"preferredVictoryType": "Domination",
 		"personality": "Van Lange",
-		"favoredReligion": "Posadism",
+		"favoredReligion": "Perpetual Warfare",
 
 		// "startIntroPart1": "",
 		// "startIntroPart2": "",
