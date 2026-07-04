@@ -74,43 +74,4 @@
 			"Largetown", "Critical Hit", "Wenches in the Trenches", "Tommy", "Closewatch", "Sniper Den", "Green Boy", "Away Depot", "Here Be Donkey Riding Methheads",],
 		"spyNames": ["Jerry", "James", "Cletus", "Titus", "Sport", "Sorry Ass", "Jack", "John", "Bucky", "Larry"]
 	},
-	{
-		"name": "Fugg Burger",
-		"leaderName": "Don Fuggs",
-		"adjective": ["Fuggin"],
-		"startBias": ["Cattle"],
-		"preferredVictoryType": "Domination",
-		"personality": "Fuggs",
-		"favoredReligion": "Herd Mentality",
-
-		// "startIntroPart1": "Get off your ass and work, Vinny. I don't Care if there's an apocalypse out there, we need to keep our numbers up. Remember, this is a family business. So when you work for Fugg Burger, You work for your family, and you best be bringing home the beef for the family, Vinny. Now recite to me the precepts of Fugg Burger... -Don Fuggs.",
-		// "startIntroPart2": "If you show up late, We put you in THE GRINDER. If you work slow, We put you in THE GRINDER. If you talk back, We put you in THE GRINDER. And if you mess with Fugg Burger, in ANY way...  ...WE PUT YOU IN THE GRINDEEEERRRRR!!!!!!!!!!!!!!!!.",
-		"declaringWar": "Soon you'll be sleepin' with the herd. TAKE THEM TO THE GRINDER!!!!!!!!",
-		"attacked": "You mess with Fugg Burger, We put you in THE GRINDER!!!!!",
-		"defeated": "TBD",
-		"introduction": "TBD",
-		"neutralHello": "TBD",
-		"hateHello": "TBD",
-		"denounced": "TBD",
-		"declaringFriendship": "TBD",
-		"tradeRequest": "TBD",
-
-        "outerColor": [92, 32, 92],
-        "innerColor": [40, 178, 0],
-		"style": "Corporate",
-		"uniqueName": "Beef Barons",
-		"uniques": [
-			"[-50]% maintenance costs <for [Civilian] units>",
-			"[+100]% [Cattle] resource production",
-			"Starts with [Iron Working]",
-			"Starts with [Redomestication]",
-			"Starts with [Monopoly] adopted",
-			"[-25]% construction time for [Pasture] improvements",
-			"[-25]% construction time for [Farm] improvements",
-			"[-1 Gold, +1 Food, +1 Production] from every [Cattle]",
-		],
-		"cities": ["Big Meat", "Slaughterhouse 6", "The Rainforest", "Fuggma", "Sad Sack", "Happy Sack", "Gravy Capuccino", "Grindstone", "Herdstown", "Fat Stacks",
-			"Fat Loads", "Dairy", "Ol' Bessie", "Production Site 57", "Production Site 12", "Production Site 67", "Warehouse 18", "Warehouse 35", "Warehouse 69",],
-		"spyNames": ["Fat Pete", "Fat Amy", "Fat Jackie", "Fat Tony", "Fat Larry", "Fat James", "Fat Johny", "Fat Pat", "Fat Tommy", "Skinny Vinny"]
-	},
 ]
