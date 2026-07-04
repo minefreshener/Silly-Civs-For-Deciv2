@@ -31,7 +31,7 @@
 			"[-25]% construction time for [Solar collector] improvements",
 			"[+1 Culture] from every [Solar collector]",
 			"Cannot build [Enslaved] units",
-			"[-3 Science] [in all cities] <before discovering [Laboratory]>",
+			"[-2 Science] [in all cities] <before discovering [Laboratory]>",
 		],
 		"cities": ["Luminaria", "Luxica", "High Exposure", "Luminopolis", "Solsburry", "Ultraviolet", "Lightfield", "Brightland", "Icarus", "The Blinds",
 			"Streetlight", "Greenland", "The Brightroom", "The Darkroom", "Solarium", "Greedy Greenhouse", "Startouched", "Big Ol' Pile of Panels", 
